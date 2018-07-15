@@ -1,3 +1,19 @@
 server:
   port: 8081
-
+spring:
+  application:
+    name: TestCTS
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        health-check-interval: 30s
+        scheme: http
+        register-health-check: true
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:7008/

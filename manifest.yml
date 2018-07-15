@@ -2,7 +2,7 @@ applications:
 - name: vj-swagger-demo
   memory: 256m
   instances: 1
-  hostname: random-route
+  host: random-route
   path: ./target/Cognizant_SpringBootAPI-1.0.0.jar
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urando
